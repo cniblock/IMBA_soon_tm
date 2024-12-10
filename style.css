@@ -107,3 +107,34 @@ p:last-of-type {
         opacity: 1;
     }
 }
+
+.pikachu {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+    width: 30vw; /* 3 times bigger */
+    height: 30vh; /* 3 times bigger */
+    background: url('sitting-pikachu.png') no-repeat center center;
+    background-size: contain;
+    transform: rotate(-15deg); /* Angle slightly to the left */
+    animation: pikachu-appear 15s ease-out forwards; /* Increase time on page */
+}
+
+@keyframes pikachu-appear {
+    0% {
+        opacity: 1;
+        transform: translateX(80%) translateY(80%) rotate(-25deg); /* Less off-page start */
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(20%) translateY(20%) rotate(-35deg); /* Moves less onto the page */
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(40%) translateY(40%) rotate(-25deg); /* Ends closer than before */
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(40%) translateY(40%) rotate(-25deg); /* Fade out */
+    }
+}
