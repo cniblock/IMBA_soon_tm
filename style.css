@@ -25,14 +25,8 @@ body {
 h1 {
     font-size: 3rem;
     font-weight: 700;
-    /* More contrasted metallic gradient */
-    background: linear-gradient(45deg, #8a8a8a, #757575, #bebebe, #666666, #d2d2d2);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* Smoother, slower shimmer */
-    animation: gold-shine 8s ease-in-out infinite, slide-in-right 1s ease-out forwards;
+    color: #ffffff; /* Solid gold color */
+    animation: slide-in-right 1s ease-out forwards;
     transition: transform 0.3s ease;
 }
 
@@ -45,14 +39,8 @@ h1:hover, h1:active {
     font-weight: 400;
     margin-bottom: 1rem;
     letter-spacing: 0.4rem;
-    /* More contrasted metallic gradient */
-    background: linear-gradient(45deg, #c0c0c0, #707070, #8a8a8a, #4a4a4a, #8a8a8a);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    /* Subtle white text-shadow to highlight text */
-    animation: gold-shine 8s ease-in-out infinite, slide-in-left 1s ease-out forwards;
+    color: #ffffff; /* Solid gold color */
+    animation: slide-in-left 1s ease-out forwards;
 }
 
 p:last-of-type {
