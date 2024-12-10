@@ -59,7 +59,8 @@ p:last-of-type {
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 0; /* Initially hidden */
-    animation: fade-in 3s ease-out 1s forwards; /* Changed duration to 3s and added 1s delay */
+    animation: fade-in 3s ease-out forwards; /* Removed delay from animation shorthand */
+    animation-delay: 1s; /* Added separate animation-delay property */
 }
 
 /* Keyframes for a subtle shimmer effect */
