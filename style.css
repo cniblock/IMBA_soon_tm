@@ -114,7 +114,7 @@ p:last-of-type {
     right: 2vw;
     width: 30vw; /* 3 times bigger */
     height: 30vh; /* 3 times bigger */
-    background: url('sitting-pikachu.png') no-repeat center center;
+    background: url('../sitting-pikachu.png') no-repeat center center;
     background-size: contain;
     transform: rotate(-15deg); /* Angle slightly to the left */
     animation: pikachu-appear 15s ease-out forwards; /* Increase time on page */
