@@ -25,8 +25,8 @@ body {
 h1 {
     font-size: 3rem;
     font-weight: 700;
-    /* Metallic gold gradient */
-    background: linear-gradient(45deg, #6a4803, #f5ed91, #b78517, #f8ef8c, #AA771C);
+    /* More gold metallic gradient */
+    background: linear-gradient(45deg, #b59c0f, #f5ed91, #b78517, #f8ef8c, #b59c0f); /* Adjusted colors for a more golden appearance */
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -44,8 +44,8 @@ h1:hover, h1:active {
     font-weight: 400;
     margin-bottom: 1rem;
     letter-spacing: 0.4rem;
-    /* Metallic gold gradient */
-    background: linear-gradient(45deg, #6a4803, #f5ed91, #b78517, #f8ef8c, #AA771C);
+    /* More gold metallic gradient */
+    background: linear-gradient(45deg, #b59c0f, #f5ed91, #b78517, #f8ef8c, #b59c0f); /* Adjusted colors for a more golden appearance */
     background-size: 200% 200%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -59,8 +59,8 @@ p:last-of-type {
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     opacity: 0; /* Initially hidden */
-    animation: fade-in 3s ease-out forwards; /* Removed delay from animation shorthand */
-    animation-delay: 1s; /* Added separate animation-delay property */
+    animation: fade-in 3s ease-out forwards;
+    animation-delay: 1s;
 }
 
 /* Keyframes for a subtle shimmer effect */
