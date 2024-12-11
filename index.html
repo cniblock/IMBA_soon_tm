@@ -42,8 +42,17 @@
             const audio = document.getElementById('background-audio');
             audio.volume = 0.1; // Set volume to 20%
 
+            let isPlaying = false;
+
             document.addEventListener('click', () => {
-                audio.muted = !audio.muted; // Toggle mute/unmute
+                if (!isPlaying) {
+                    audio.play().catch(error => {
+                        console.error('Audio playback failed:', error);
+                    });
+                    isPlaying = true;
+                } else {
+                    audio.muted = !audio.muted; // Toggle mute/unmute
+                }
             });
         });
     </script>
