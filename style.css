@@ -138,3 +138,18 @@ p:last-of-type {
         transform: translateX(40%) translateY(40%) rotate(-25deg); /* Fade out */
     }
 }
+
+.santa-hat {
+    position: relative;
+}
+
+.santa-hat::after {
+    content: url('santa-hat.svg');
+    position: absolute;
+    top: -10px; /* Move down to sit on top of the "S" */
+    left: -5px; /* Adjust position */
+    width: 60px; /* Size remains the same */
+    height: 60px; /* Size remains the same */
+    transform: rotate(20deg); /* Tilt to the right */
+}
+
