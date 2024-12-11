@@ -12,4 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         snowflake.style.animationDelay = `${Math.random() * 5}s`;
         snowflakesContainer.appendChild(snowflake);
     }
+
+    if (window.DeviceOrientationEvent) {
+        window.addEventListener('deviceorientation', (event) => {
+            const x = event.gamma; // In degree in the range [-90,90]
+            const y = event.beta;  // In degree in the range [-180,180]
+
+            const snowflakes = document.querySelectorAll('.snowflake');
+            snowflakes.forEach(snowflake => {
+                const offsetX = (x / 90) * 10; // Adjust the multiplier for sensitivity
+                const offsetY = (y / 180) * 10; // Adjust the multiplier for sensitivity
+                snowflake.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            });
+        });
+    }
 });
