@@ -144,7 +144,7 @@ p:last-of-type {
 }
 
 .santa-hat::after {
-    content: url('santa-hat.svg');
+    content: url('../santa-hat.svg');
     position: absolute;
     top: -10px; /* Move down to sit on top of the "S" */
     left: -5px; /* Adjust position */
